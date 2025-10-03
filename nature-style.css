@@ -1,0 +1,51 @@
+/* Text formatting styles */
+h1 {
+    color: #daf9d6;
+    font-family: Baskervville, serif;
+    font-size: 24pt;
+    text-transform: uppercase;
+    text-align: center;
+  }
+/* header styles */
+header {
+    background-color: #330A0A;
+    height: 200px;
+    padding: .5em .5em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+header h1 {
+    color: #ACBBAA;
+    align-self: center;
+  }
+nav {
+    background-color: #661414;
+    padding: .5em;
+  }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+  }
+nav ul li {
+    font-size: 14pt;
+    padding-left: 5em;
+    font-family: Baskervville, serif;
+  }
+nav ul li a, nav ul li a:visited {
+    display: block;
+    border: 1px solid;
+    border-radius: .5em;
+    background-color: #e7d6cb;
+    padding: .5em 1em;
+    margin: .5em; 
+    color: black;
+    text-decoration-line: none;
+  }
+nav ul li a:hover {
+    background-color: #c9b09f;
+  }
