@@ -1,0 +1,1 @@
+This is a personal portfolio project created to satisfy program requirements for the Texas Tech University Masters in Technical Communication and Rhetoric. All code and materials hosted on the site are original intellectual property of Willard Justice.
