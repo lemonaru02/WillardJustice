@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 /* Text formatting styles */
 h1 {
     color: #daf9d6;
@@ -6,6 +9,22 @@ h1 {
     text-transform: uppercase;
     text-align: center;
   }
+h2 {
+  font-family: Baskervville, serif;
+  font-size: 18pt;
+  color: #661414;
+}
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14pt;
+}
+a:hover {
+  color: #ACBBAA;
+ }
+a {
+  color: green;
+  text-decoration: underline;
+}
 /* header styles */
 header {
     background-color: #330A0A;
@@ -23,7 +42,6 @@ header h1 {
 nav {
     background-color: #661414;
     padding: .5em;
-    margin: 0;
   }
 nav ul {
     margin: 0;
@@ -49,5 +67,107 @@ nav ul li a, nav ul li a:visited {
   }
 nav ul li a:hover {
     background-color: #c9b09f;
-
+    color: black;
+    text-decoration: underline;
   }
+
+/* carousel styles */
+.carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25vw;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: black;
+  opacity: 25%;
+}
+.text {
+  grid-column-start: 2;
+  color: black;
+  font-size: 15px;
+  padding: 70px 15px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 70px 15px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Bio styles */
+.bio img {
+  float: right;
+  margin-right: 2em;
+  margin-left: 2em;
+  height: 25vw;
+  border-radius: 15%;
+  border-width: 15px;
+  border-style: groove;
+  border-color: #ACBBAA;
+}
+.bio p, .bio h2 {
+  margin-left: 2em;
+}
+.bio {
+  margin-top: 8em;
+}
