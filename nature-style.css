@@ -1,6 +1,13 @@
 body {
   margin: 0;
 }
+footer {
+  margin: 0;
+  background-color: #330A0A;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+}
 /* Text formatting styles */
 h1 {
     color: #daf9d6;
@@ -14,7 +21,12 @@ h2 {
   font-size: 18pt;
   color: #661414;
 }
-p {
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+}
+p, .cv ul {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 14pt;
 }
@@ -24,6 +36,11 @@ a:hover {
 a {
   color: green;
   text-decoration: underline;
+}
+small {
+  color: #ACBBAA;
+  display: flex;
+  align-self: center;
 }
 /* header styles */
 header {
@@ -48,11 +65,10 @@ nav ul {
     padding: 0;
     list-style-type: none;
     display: flex;
-    justify-content: left;
+    justify-content: space-evenly;
   }
 nav ul li {
     font-size: 14pt;
-    padding-left: 5em;
     font-family: Baskervville, serif;
   }
 nav ul li a, nav ul li a:visited {
@@ -68,7 +84,7 @@ nav ul li a, nav ul li a:visited {
 nav ul li a:hover {
     background-color: #c9b09f;
     color: black;
-    text-decoration: underline;
+    text-decoration: double;
   }
 
 /* carousel styles */
@@ -170,4 +186,93 @@ nav ul li a:hover {
 }
 .bio {
   margin-top: 8em;
+}
+
+/* cv styles */
+.cv, .portfolio {
+  margin: 2rem;
+}
+.education, .publications, .awards {
+  background-color: #e7d6cb;
+}
+.education, .work, .publications, .volunteer, .awards {
+  padding: 2rem;
+}
+/* leaders code modified from W3.org */
+ul.leaders {
+  padding: 0;
+  overflow-x: hidden;
+  list-style: bullet;
+}
+ul.leaders span.point::after {
+  white-space: nowrap;
+  content:
+" . . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+" . . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . .";
+  overflow: hidden;
+}
+ul.leaders span:first-child {
+  padding-right: 0.33em;
+}
+ul.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+}
+
+/* portfolio styles */
+.instructions, .QualAnalysis {
+  background-color: #daf9d6;
+}
+.portfolio button {
+  background-color: #daf9d6;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 1em;
+}
+.portfolio button:hover {
+  background-color: #c7e2c3;
+}
+.skills {
+  text-align: center;
+}
+.portfolio a {
+  color: #661414;
+  text-decoration: double;
+  text-align: center;
+}
+portfolio {
+  margin: 2rem;
+  padding: 2rem;
+}
+.instructions, .TechComm, .QualAnalysis, .RhetAnalysis,
+.project,
+.files {
+  padding: 2rem;
+  text-align: center
+}
+
+/* project pages styles */
+i {
+  font-size: 35px;
+  text-decoration: none;
+  margin-left: 7vw;
+  margin-top: 25px;
+}
+.project img {
+  float: right;
+  width: 45vw;
+  margin-left: 5vw;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+iframe {
+  height: 500px;
+  width: 70vw;
 }
