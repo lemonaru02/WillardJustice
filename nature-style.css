@@ -29,6 +29,7 @@ h3 {
 p, .cv ul {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 14pt;
+  text-wrap: balance;
 }
 a:hover {
   color: #ACBBAA;
@@ -278,4 +279,5 @@ iframe {
   height: 500px;
   width: 70vw;
 }
+
 
