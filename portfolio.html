@@ -25,39 +25,40 @@
 
 <main>
 <div class="portfolio">
-  <div class=skills>
-    <button class="UX">Usability Research</button>
-    <button class="UCD">User-Centered Design</button>
-    <button class="ID">Instructional Design</button>
-    <button class="video">Video Editing</button>
-    <button class="MMdesign">Multimodal Design</button>
-    <button class="UAnalysis">User Analysis</button>
-    <button class="TComm">Technical Communication</button>
-    <button class="Docs">Document Writing</button>
-    <button class="Analysis">Analysis</button>
-    <button class="GVD">Graphs and Visual Design</button>
-    <button class="DAnalysis">Data Analysis</button>
-    <button class="Rhetoric">Rhetoric</button>
+  <div id="myBtnContainer">
+     <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+     <button class="btn" onclick="filterSelection('UX')"> Usability Research</button>
+     <button class="btn" onclick="filterSelection('UCD')"> User-Centered Design</button>
+     <button class="btn" onclick="filterSelection('ID')"> Instructional Design</button>
+     <button class="btn" onclick="filterSelection('video')"> Video Editing</button>
+     <button class="btn" onclick="filterSelection('MMdesign')"> Multimodal Design</button>
+     <button class="btn" onclick="filterSelection('UAnalysis')"> User Analysis</button>
+     <button class="btn" onclick="filterSelection('TComm')"> Technical Communication</button>
+     <button class="btn" onclick="filterSelection('Docs')"> Document Writing</button>
+     <button class="btn" onclick="filterSelection('Analysis')"> Analysis</button>
+     <button class="btn" onclick="filterSelection('GVD')"> Graphs and Visual Design</button>
+     <button class="btn" onclick="filterSelection('DAnalysis')"> Data Analysis</button>
+     <button class="btn" onclick="filterSelection('Rhetoric')"> Rhetoric</button>
   </div>
-  <div class="instructions">
+  <div class="filterDiv UX UCD ID Video MMdesign instructions">
     <h2><a href="instructions.html">Instruction Set for New Instructors</a></h2>
     <p>This project offers an orientation presentation, instruction video, and reference handout to guide 
         new graduate instructors in grading student work through Blackboard LMS.</p>
     <p><a>usability research</a> <a>user-centered design</a> <a>instructional design</a> <a>video editing</a> <a>multimodal design</a></p>
   </div>
-  <div class="TechComm">
+  <div class="filterDiv UCD UAnalysis TComm Docs TechComm">
     <h2><a href="techcomm.html">Technical Communication of Surgery Technique</a></h2>
     <p>This project offers an adaptive brochure to educate patients on a surgical technique that may be 
         useful to them and a detailed project summary.</p>
     <p><a>user-centered design</a> <a>user analysis</a> <a>technical communication</a> <a>document writing</a></p>
   </div>
-  <div class="QualAnalysis">
+  <div class="filterDiv Docs Analysis GVD DAnalysis QualAnalysis">
     <h2><a href="qualanalysis.html">Qualitative Analysis Report</a></h2>
     <p>This project offers a detailed summary of a qualitative analysis over the current job market for 
         entry-level technologically-related technical writing positions in Texas.</p>
     <p><a>document writing</a> <a>analysis</a> <a>graphs and visual design</a> <a>data analysis</a></p>
   </div>
-  <div class="RhetAnalysis">
+  <div class="filterDiv MMdesign Analysis Rhetoric RhetAnalysis">
     <h2><a href="rhetanalysis.html">Rhetorical Analysis of <em>Brat</em> Songs</a></h2>
     <p>This project offers a rhetorical analysis of two remixed songs from CharliXCX's album <em>Brat</em> through the 
         lens of Erasmian rhetoric, designed as an academic essay, poster presentation, and conference presentation.</p>
@@ -65,8 +66,53 @@
   </div>
 </div>
 </main>
+  <script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 <footer>
     <small> Willard Q Justice | 2025 </small>
   </footer>
 </body>
+
 </html>
