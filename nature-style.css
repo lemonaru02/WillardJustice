@@ -257,6 +257,12 @@ portfolio {
   padding: 2rem;
   text-align: center
 }
+.filterDiv {
+  display: none;
+}
+.show {
+  display: block;
+}
 
 /* project pages styles */
 i {
@@ -279,5 +285,6 @@ iframe {
   height: 500px;
   width: 70vw;
 }
+
 
 
