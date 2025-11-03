@@ -8,6 +8,9 @@ footer {
   display: flex;
   justify-content: center;
 }
+main {
+  background-image: url("images/background-lines.jpg")
+}
 /* Text formatting styles */
 h1 {
     color: #daf9d6;
@@ -290,6 +293,7 @@ iframe {
   height: 500px;
   width: 70vw;
 }
+
 
 
 
