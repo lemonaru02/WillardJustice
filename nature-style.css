@@ -9,9 +9,9 @@ footer {
   justify-content: center;
 }
 main {
-  background-image: url("images/background-lines.jpg");
+  background-image: url("images/background-lines-muted.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 /* Text formatting styles */
 h1 {
@@ -190,6 +190,8 @@ nav ul li a:hover {
   border-width: 15px;
   border-style: groove;
   border-color: #ACBBAA;
+  box-shadow: -15px -10px #330A0A;
+
 }
 .bio p, .bio h2 {
   margin-left: 2em;
