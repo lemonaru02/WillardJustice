@@ -246,7 +246,7 @@ ul.leaders span + span {
 }
 .portfolio a {
   color: #661414;
-  text-decoration: double;
+  text-decoration: underline;
   text-align: center;
 }
 portfolio {
@@ -290,6 +290,7 @@ iframe {
   height: 500px;
   width: 70vw;
 }
+
 
 
 
