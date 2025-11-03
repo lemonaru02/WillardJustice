@@ -263,6 +263,9 @@ portfolio {
 .show {
   display: block;
 }
+.myBtnContainer {
+  text-align: center;
+}
 
 /* project pages styles */
 i {
@@ -285,6 +288,7 @@ iframe {
   height: 500px;
   width: 70vw;
 }
+
 
 
 
