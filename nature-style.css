@@ -134,7 +134,7 @@ nav ul li a:hover {
   grid-column-start: 2;
   color: black;
   font-size: 15px;
-  padding: 70px 15px;
+  padding: 70px 0px;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -290,6 +290,7 @@ iframe {
   height: 500px;
   width: 70vw;
 }
+
 
 
 
