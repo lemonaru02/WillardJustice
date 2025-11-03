@@ -37,10 +37,10 @@ p, .cv ul {
   text-wrap: balance;
 }
 a:hover {
-  color: #ACBBAA;
+  color: #330A0A;
  }
 a {
-  color: green;
+  color: #661414;
   text-decoration: underline;
 }
 small {
@@ -55,7 +55,7 @@ small {
   margin: .2em;
   line-height: 2.15em;
   border-width: 5px;
-  border-color: #ACBBAA;
+  border-color: #661414;
 }
 /* header styles */
 header {
@@ -148,7 +148,7 @@ nav ul li a:hover {
 }
 
 .numbertext {
-  color: #f2f2f2;
+  color: #661414;
   font-size: 12px;
   padding: 70px 15px;
   position: absolute;
@@ -160,14 +160,14 @@ nav ul li a:hover {
   height: 15px;
   width: 15px;
   margin: 35px 2px;
-  background-color: #bbb;
+  background-color: #811a1a;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #330A0A;
 }
 
 .fade {
@@ -189,7 +189,7 @@ nav ul li a:hover {
   border-radius: 15%;
   border-width: 15px;
   border-style: groove;
-  border-color: #ACBBAA;
+  border-color: #811a1a;
   box-shadow: -15px -10px #330A0A;
 
 }
