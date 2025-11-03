@@ -43,6 +43,15 @@ small {
   display: flex;
   align-self: center;
 }
+.skill {
+  border-radius: .5em;
+  border-style: double;
+  padding: .2em;
+  margin: .2em;
+  line-height: 2.15em;
+  border-width: 5px;
+  border-color: #ACBBAA;
+}
 /* header styles */
 header {
     background-color: #330A0A;
@@ -288,6 +297,7 @@ iframe {
   height: 500px;
   width: 70vw;
 }
+
 
 
 
