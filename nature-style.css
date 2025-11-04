@@ -268,7 +268,7 @@ ul.leaders span + span {
 .filterDiv {
   display: none;
   max-height: 18em;
-  background-image: url("Website-Background-clip1.jpg");
+  background-image: url("images/Website-Background-clip1.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-origin:border-box;
@@ -281,7 +281,7 @@ ul.leaders span + span {
 #myBtnContainer {
   text-align: center;
   height: 10em;
-  background-image: url("Website-Background-clip2.jpg");
+  background-image: url("images/Website-Background-clip2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-top: 3rem;
