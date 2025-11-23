@@ -202,36 +202,38 @@ nav ul li a:hover {
 }
 /* leaders code modified from W3.org */
 ul.leaders {
-  max-width: 90vw;
   padding: 0;
   overflow-x: hidden;
-  list-style: none;
+  list-style: bullet;
 }
 ul.leaders li:before {
   float: left;
   width: 0;
   white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . ."
-  ". . . . . . . . . . . . . . . . . . . . "
-  ". . . . . . . . . . . . . . . . . . . . "
-  ". . . . . . . . . . . . . . . . . . . . "
-  ". . . . . . . . . . . . . . . . . . . . "
+  content:
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . ";
 }
 ul.leaders span:first-child {
   padding-right: 0.33em;
-  background:white;
+  background-color: white;
 }
 ul.leaders span + span {
   float: right;
   padding-left: 0.33em;
-  background: white;
-}
-ul.notes li:before {
-  content: " ";
+  background-color: white;
 }
 ul.bg-brown span:first-child,
-ul.bg-brown span+span {
-  background: #e7d6cb;
+ul.bg-brown span + span {
+  background-color: #e7d6cb;
+}
+ul.notes li:before {
+  content: " "
 }
 
 /* portfolio styles */
@@ -282,12 +284,6 @@ ul.bg-brown span+span {
   padding-top: 3rem;
 }
 /* project pages styles */
-i {
-  font-size: 35px;
-  text-decoration: none;
-  margin-left: 7vw;
-  margin-top: 25px;
-}
 .project img {
   float: right;
   width: 45vw;
