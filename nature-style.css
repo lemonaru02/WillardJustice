@@ -134,6 +134,13 @@ nav ul li a:hover {
   color: black;
   opacity: 25%;
 }
+/* i is for ICON */
+i {
+  font-size: 35px;
+  text-decoration: none;
+  margin-left: 7vw;
+  margin-top: 25px;
+}
 .text {
   grid-column-start: 2;
   color: black;
