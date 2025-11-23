@@ -202,25 +202,33 @@ nav ul li a:hover {
 }
 /* leaders code modified from W3.org */
 ul.leaders {
+  max-width: 90vw;
   padding: 0;
   overflow-x: hidden;
-  list-style: bullet;
+  list-style: none;
 }
-ul.leaders span.point::after {
+ul.leaders li:before {
+  float: left;
+  width: 0;
   white-space: nowrap;
-  content:
-" . . . . . . . . . . . . . . . . . . . . "
-". . . . . . . . . . . . . . . . . . . . "
-" . . . . . . . . . . . . . . . . . . . . "
-". . . . . . . . . . . . . . .";
-  overflow: hidden;
+  content: "․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․"
+    "․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․";
 }
 ul.leaders span:first-child {
   padding-right: 0.33em;
+  background:white;
 }
 ul.leaders span + span {
   float: right;
   padding-left: 0.33em;
+  background: white;
+}
+ul.notes li:before {
+  content: " ";
+}
+ul.bg-brown span:first-child,
+ul.bg-brown span+span {
+  background: #e7d6cb;
 }
 
 /* portfolio styles */
