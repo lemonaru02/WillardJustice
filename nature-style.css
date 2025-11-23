@@ -31,13 +31,10 @@ h3 {
   font-size: 14pt;
   text-transform: uppercase;
 }
-p {
-  text-shadow: -2px -2px 5px white, 0 0 .25em white; 
-}
 p, .cv ul {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 14pt;
-  text-wrap: balance;
+  text-wrap: auto;
 }
 a:hover {
   color: #330A0A;
