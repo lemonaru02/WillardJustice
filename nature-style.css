@@ -264,7 +264,9 @@ ul.notes li:before {
   text-align: center;
 }
 .instructions, .TechComm, .QualAnalysis, .RhetAnalysis,
-.project,
+.project {
+  padding: 2rem;
+}
 .files {
   padding: 2rem;
   text-align: center
