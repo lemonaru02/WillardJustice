@@ -160,7 +160,7 @@ i {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.dot:hover {
   background-color: #330A0A;
 }
 .fade {
@@ -286,7 +286,7 @@ ul.notes li:before {
 .show {
   display: block;
 }
-#myBtnContainer, #myBtnContainer1 {
+#myBtnContainer {
   text-align: center;
   height: 10em;
   background-image: url("images/Website-Background-clip2.jpg");
@@ -294,7 +294,7 @@ ul.notes li:before {
   background-repeat: no-repeat;
   padding-top: 3rem;
 }
-#myBtnContainer1 {
+.cv #myBtnContainer {
   background-image: none;
 }
 /* project pages styles */
