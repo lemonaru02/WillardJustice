@@ -247,7 +247,7 @@ ul.notes li:before {
 }
 
 /* portfolio styles */
-.portfolio button {
+button {
   background-color: #daf9d6;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1rem;
@@ -255,7 +255,7 @@ ul.notes li:before {
   padding: .5em;
   margin: 1em;
 }
-.portfolio button:hover {
+button:hover {
   background-color: #c7e2c3;
 }
 .skills {
