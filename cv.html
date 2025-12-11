@@ -23,9 +23,9 @@
   </ul>
 </nav>
 
-<div id="myBtnContainer">
+<div id="myBtnContainer1">
      <button class="btn active" onclick="filterSelection('CVfull')">C.V.</button>
-     <button class="btn" onclick="filterSelection('resume')">Resume</button>
+     <button class="btn" onclick="filterSelection('resumefull')">Resume</button>
 </div>
 
 <div class="cv CVfull">
@@ -113,6 +113,7 @@
 </div>
 
 <div class="cv resume">
+  <h2>Resume</h2>
   <div class="education bg-brown">
      <h3>Education</h3>
     <ul class="leaders bg-brown">
@@ -191,12 +192,12 @@
   </div>
   <div class="achievements">
     <h3>Skills and Achievements</h3>
-    <ul class="leaders bg-brown">
+    <ul>
       <li>Conversational fluency in Spanish</li>
       <li>70 WPM typing speed</li>
       <li>Microsoft Office: Word, PowerPoint, Excel, Outlook, ClipChamp, and Visual Studio Code</li>
       <br>
-      <li>Outstanding 1st-Year MA Instructor in First-Year Writing (Texas Tech University)</span><span><em>Spring 2025</em></span></li>
+      <li>Outstanding 1st-Year MA Instructor in First-Year Writing (Texas Tech University)/li>
       <li>Presidential Scholar (Abilene Christian University)</li>
       <li>Sigma Delta Pi - Spanish Honors Society, Omega Tau branch (Abilene Christian University))</li>
     </ul>
@@ -206,15 +207,15 @@
 <script>
 // Credits: Javascript code used from the W3 sample.
 filterSelection("all")
-// function filterSelection(c) {
-//  var x, i;
-//  x = document.getElementsByClassName("filterDiv");
-//  if (c == "all") c = "";
-//  for (i = 0; i < x.length; i++) {
-//    w3RemoveClass(x[i], "show");
-//    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-//  }
-//}
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
 function w3AddClass(element, name) {
   var i, arr1, arr2;
@@ -237,7 +238,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btnContainer = document.getElementById("myBtnContainer");
+var btnContainer = document.getElementById("myBtnContainer1");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){

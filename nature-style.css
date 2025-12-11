@@ -201,10 +201,12 @@ i {
 .cv {
   margin: 2rem;
 }
-.education, .publications, .awards {
+.education, .publications, .awards,
+.otherwork, .achievements {
   background-color: #e7d6cb;
 }
-.education, .work, .publications, .volunteer, .awards {
+.education, .work, .publications, .volunteer, .awards,
+.relevantwork, .otherwork, .achievements {
   padding: 2rem;
 }
 /* leaders code modified from W3.org */
@@ -284,13 +286,16 @@ ul.notes li:before {
 .show {
   display: block;
 }
-#myBtnContainer {
+#myBtnContainer, #myBtnContainer1 {
   text-align: center;
   height: 10em;
   background-image: url("images/Website-Background-clip2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-top: 3rem;
+}
+#myBtnContainer1 {
+  background-image: none;
 }
 /* project pages styles */
 .project img {
