@@ -18,8 +18,8 @@
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li class="checked"><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="cv.html">C.V.</a></li> 
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="cv.html">C.V. & Resume</a></li> 
   </ul>
 </nav>
 
@@ -66,7 +66,9 @@
   </div>
 </div>
 
+
   <script>
+// Credits: Javascript code used from the W3 sample.
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -99,7 +101,6 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {

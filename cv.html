@@ -19,11 +19,16 @@
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="portfolio.html">Portfolio</a></li>
-    <li class="checked"><a href="cv.html">C.V.</a></li> 
+    <li><a href="cv.html">C.V. & Resume</a></li> 
   </ul>
 </nav>
 
-<div class="cv">
+<div id="myBtnContainer">
+     <button class="btn active" onclick="filterSelection('CVfull')">C.V.</button>
+     <button class="btn" onclick="filterSelection('resume')">Resume</button>
+</div>
+
+<div class="cv CVfull">
   <h2 style="text-align: center;">Curriculum Vitae</h2>
   <div class="education">
     <h3>Education</h3>
@@ -75,7 +80,8 @@
   </div>
   <div class="publications bg-brown">
     <h3>Publications</h3>
-    <p>“They Need Rappers Like Me: A Poetic Analysis of Identity and Disturbance in Women's Rap Music.” Dec. 2023. Undergraduate thesis, Department of Language and Literature, Abilene Christian University.</p>
+    <p>"They Need Rappers Like Me: A Poetic Analysis of Identity and Disturbance in Women's Rap Music." Dec. 2023. Undergraduate thesis, Department of Language and Literature, Abilene Christian University.</p>
+    <p>"An Erasmian Dance of Rhetoric in Remixes of <em>brat and it's completely different but still brat</em>." Jun. 2025. Conference presentation, Creative Women's Writing Association. University of Falmouth, Falmouth, Cornwall.</p>
   </div>
   <div class="volunteer">
     <h3>Co-Matricular Volunteer Experience</h3>
@@ -106,6 +112,142 @@
   </div>
 </div>
 
+<div class="cv resume">
+  <div class="education bg-brown">
+     <h3>Education</h3>
+    <ul class="leaders bg-brown">
+      <li><span>Texas Tech University &bull; Lubbock, TX</span>
+          <span><em>predicted 5/2026</em></span></li>
+        <ul class="notes">
+            <li>Master of Technical Communication and Rhetoric</li>
+        </ul>
+      <li><span>Abilene Christian University &bull; Abilene, TX</span>
+          <span><em>12/2023</em></span></li>
+          <ul class="notes">
+            <li>Bachelor of Arts in English, minor in Spanish</li>
+            <li>Honors Scholar</li>
+            <li>Summa Cum Laude; 4.0 Cumulative GPA</li>
+          </ul>
+    </ul>
+  </div>
+  <div class="relevantwork">
+    <h3>Relevant Work Experience</h3>
+    <ul class="leaders">
+      <li><span>Graduate Part-Time Instructor &bull; Texas Tech University</span>
+            <span><em>8/24-present</em></span></li>
+        <ul class="notes">
+          <li>Teach two sections of a course in the first-year writing program, create lesson plans, and grade student assignments </li>
+          <li>Hold three hours of office hours each week and respond to student emails within 24-48 hours</li>
+        </ul>
+      <li><span>Writing Center Tutor &bull; Abilene Christian University</span>
+            <span><em>8/2022-12/2023</em></span></li>
+        <ul class="notes">
+          <li>Tutor peers one-on-one for 30-60 minutes on technical aspects of writing such as grammar, composition, and formatting</li>
+          <li>Review writing to offer candid feedback on style, clarity, and word choice</li>
+        </ul>
+    </ul>
+  </div>
+  <div class="otherwork bg-brown">
+    <h3>Other Work Experience</h3>
+    <ul class="leaders bg-brown">
+      <li><span>Shift Leader (FOH/BOH) &bull; McAlister's Deli</span>
+            <span><em>6/2022-9/2023</em></span></li>
+        <ul class="notes">
+          <li>Maintain a friendly and polite disposition for team and guest relations</li>
+          <li>Prepare food for guests, clean restaurant, take orders and payments at counter</li>
+          <li>Organize team effectively, ensure quality of service and cleanliness, record food safety information, count cash and record discrepancies</li>
+        </ul>
+      <li><span>Librarian Assistant &bull; Abilene Christian University</span>
+            <span><em>1/2021-12/2021</em></span></li>
+        <ul class="notes">
+          <li>Assist the theological librarian by shelving, recording in-house use, preparing periodicals, and marking inventory with iPad technology</li>
+        </ul>
+      <li><span>Maker on Duty &bull; Abilene Christian University</span>
+          <span><em>8/2021-12/2021</em></span></li>
+        <ul class="notes">
+          <li>Assist crafters with professional-grade machinery, offer creative advice, accept payment for materials used, maintain clean work space</li>
+          <li>Maintain a working knowledge of Adobe Illustrate and Photoshop</li>
+        </ul>
+    </ul>
+  </div>
+  <div class="volunteer">
+    <h3>Volunteer Experience</h3>
+    <ul class="leaders">
+      <ul class="leaders">
+      <li><span>Project Finisher &bull; Loose Ends</span>
+            <span><em>5/2025-present</em></span></li>
+        <ul class="notes">
+          <li>Complete needlework and fiber arts projects left unfinished by deceased or incapacitated family members for the surviving project owner</li>
+          <li>Communicate with the project owner and manager through monthly updates</li>
+        </ul>
+      <li><span>Publicist of ACU Swing Cats &bull; Abilene Christian University</span>
+            <span><em>1/2021-6/2022</em></span></li>
+        <ul class="notes">
+          <li>Support organization growth by maintaining presence online and on campus</li>
+          <li>Collaborate with officer team to organize, advertise, and host club events</li>
+          <li>Engage organization members to facilitate sense of community</li>
+        </ul>
+    </ul>
+  </div>
+  <div class="achievements">
+    <h3>Skills and Achievements</h3>
+    <ul class="leaders bg-brown">
+      <li>Conversational fluency in Spanish</li>
+      <li>70 WPM typing speed</li>
+      <li>Microsoft Office: Word, PowerPoint, Excel, Outlook, ClipChamp, and Visual Studio Code</li>
+      <br>
+      <li>Outstanding 1st-Year MA Instructor in First-Year Writing (Texas Tech University)</span><span><em>Spring 2025</em></span></li>
+      <li>Presidential Scholar (Abilene Christian University)</li>
+      <li>Sigma Delta Pi - Spanish Honors Society, Omega Tau branch (Abilene Christian University))</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+// Credits: Javascript code used from the W3 sample.
+filterSelection("all")
+// function filterSelection(c) {
+//  var x, i;
+//  x = document.getElementsByClassName("filterDiv");
+//  if (c == "all") c = "";
+//  for (i = 0; i < x.length; i++) {
+//    w3RemoveClass(x[i], "show");
+//    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+//  }
+//}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</div>
 <footer>
     <small> Willard Q Justice | 2025 </small>
   </footer>
