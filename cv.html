@@ -24,12 +24,12 @@
 </nav>
 
 <div class="cv">
-<div id="myBtnContainer1">
+<div id="myBtnContainer">
      <button class="btn active" onclick="filterSelection('CVfull')">C.V.</button>
      <button class="btn" onclick="filterSelection('resumefull')">Resume</button>
 </div>
 
-<div class="CVfull">
+<div class="filterDiv CVfull">
   <h2 style="text-align: center;">Curriculum Vitae</h2>
   <div class="education">
     <h3>Education</h3>
@@ -113,7 +113,7 @@
   </div>
 </div>
 
-<div class="resume">
+<div class="filterDiv resume">
   <h2 style="text-align: center;">Resume</h2>
   <div class="education bg-brown">
      <h3>Education</h3>
@@ -206,11 +206,11 @@
 </div>
 </div>
 <script>
-filterSelection("all")
+filterSelection("CVfull")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
+  if (c == "CVfull") c = "";
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
@@ -237,7 +237,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btnContainer = document.getElementById("myBtnContainer1");
+var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){

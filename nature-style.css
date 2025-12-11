@@ -200,6 +200,7 @@ i {
 /* cv styles */
 .cv {
   margin: 2rem;
+  max-height: fit-content;
 }
 .education, .publications, .awards,
 .otherwork, .achievements {
@@ -296,6 +297,7 @@ ul.notes li:before {
 }
 .cv #myBtnContainer {
   background-image: none;
+  height: 5em;
 }
 /* project pages styles */
 .project img {
