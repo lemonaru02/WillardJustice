@@ -276,13 +276,19 @@ ul.notes li:before {
 }
 .filterDiv {
   display: none;
-  max-height: 18em;
   background-image: url("images/Website-Background-clip1.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-origin:border-box;
   padding-left: 12em;
   padding-right: 12em;
+}
+.portfolio .filterDiv {
+  max-height: 18em;
+}
+.cv .filterDiv {
+  background-image: none;
+  height: fit-content
 }
 .show {
   display: block;
@@ -299,6 +305,7 @@ ul.notes li:before {
   background-image: none;
   height: 5em;
 }
+
 /* project pages styles */
 .project img {
   float: right;
