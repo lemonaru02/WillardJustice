@@ -121,8 +121,8 @@ nav ul li a:hover {
 }
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 30rem;
+  position: relative;
+  top: 10rem;
   color: black;
   user-select: none;
 }
@@ -320,6 +320,7 @@ iframe {
   height: 32rem;
   width: 70vw;
 }
+
 
 
 
