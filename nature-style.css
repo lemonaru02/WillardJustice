@@ -101,7 +101,7 @@ nav ul li a:hover {
     color: black;
     text-decoration: double;
   }
-.checked {
+nav ul li .checked {
   background-color:#c9b09f;
 }
 
@@ -125,7 +125,7 @@ nav ul li a:hover {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  bottom: 15rem;
+  top: 75rem;
   color: black;
   user-select: none;
 }
@@ -326,6 +326,7 @@ iframe {
   height: 32rem;
   width: 70vw;
 }
+
 
 
 
