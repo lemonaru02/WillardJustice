@@ -329,7 +329,7 @@ iframe {
 
 
 /* adaptive design adjusters */
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
    .carousel .mySlides .text p .skill {
       display: none;
    }
@@ -344,6 +344,7 @@ iframe {
     margin: 0;
   }
 }
+
 
 
 
