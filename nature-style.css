@@ -334,6 +334,7 @@ iframe {
       display: none;
    }
 }
+
 @media print {
   nav, footer, .myBtnContainer {
     display: none;
@@ -342,8 +343,14 @@ iframe {
     background-color: white;
     padding: 0;
     margin: 0;
+    text-align: left;
+  }
+  header {
+    padding: none;
+    color: black;
   }
 }
+
 
 
 
