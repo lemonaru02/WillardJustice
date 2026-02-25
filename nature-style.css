@@ -101,6 +101,9 @@ nav ul li a:hover {
     color: black;
     text-decoration: double;
   }
+.checked {
+  background-color:#c9b09f;
+}
 
 /* carousel styles */
 .carousel {
@@ -121,8 +124,8 @@ nav ul li a:hover {
 }
 .prev, .next {
   cursor: pointer;
-  position: relative;
-  top: 10rem;
+  position: absolute;
+  bottom: 15rem;
   color: black;
   user-select: none;
 }
@@ -193,7 +196,7 @@ i {
   padding: .5em;
 }
 .bio {
-  margin-top: 8em;
+  margin-bottom: 8em;
   padding: .95em;
 }
 
