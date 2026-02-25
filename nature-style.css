@@ -328,14 +328,22 @@ iframe {
 }
 
 
-
-
-
-
-
-
-
-
+/* adaptive design adjusters */
+@media screen and (min-width: 1200px) {
+   .carousel .mySlides .text p .skill {
+      display: none;
+   }
+}
+@media print {
+  header, nav, footer {
+    display: none;
+  }
+  body {
+    background-color: white;
+    padding: .5rem;
+    margin: .75rem;
+  }
+}
 
 
 
